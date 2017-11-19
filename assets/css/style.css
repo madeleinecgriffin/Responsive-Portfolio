@@ -1,0 +1,519 @@
+body, html {
+	background-image: url("../images/concrete_seamless.png");
+	background-repeat: repeat;
+	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+}
+
+h1 {
+	color: #ffffff;
+
+}
+
+h2 {
+	color: #801B22;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h3 {
+	color: #801B22;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h4 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+
+}
+
+
+/*Top bar with Title and Nav (div)*/
+.top-bar {
+	background-color: #ffffff;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid darkgray;
+	position: relative;
+}
+
+/*Blue box with my name (div)*/
+.blue-title {
+	margin-left: 80px;
+	margin-top: 0;
+	width: 300px;
+	height: 80px;
+	background-color: #801B22;
+	text-align: center;
+	color: #ffffff;
+	float: left;
+}
+
+/*(div) to hold nav bar*/
+.nav {
+	float: left;
+	width: 33%;
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	right: 75px;
+}
+
+/*Nav bar (div), each individual list item*/
+.nav-list {
+    float: left;
+    text-decoration: none;
+    width: 25%;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: darkgray;
+	font-size: 105%;
+	padding-top: 25px;
+    list-style-type: none;
+    text-align: center;
+}
+
+/*Nav bar (a), each individual list link*/
+.nav-link {
+	text-decoration: none;
+	font-size: 105%;
+	padding: 5px 5px 5px 5px;
+	color: darkgray;
+	text-align: center;
+}
+
+/*White name text in blue box (h1)*/
+.name-title {
+	padding-top: 20px;
+	margin: 0;
+}
+
+/*(div) container of most of the page*/
+.container {
+	width: 100%;
+	margin-bottom: -60px;
+	float: left;
+	padding-bottom: 160px;
+}
+
+/*Entire box (div) with about me*/
+.about-box {
+	height: auto;
+	width: 50%;
+	background-color: #ffffff;
+	margin-left: 80px;
+	padding: 10px 20px 15px 20px;
+	margin-top: 45px;
+	float: left;
+	border-color: darkgray;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/*Entire box (div) with contact me*/
+.contact-box {
+	height: auto;
+	width: 50%;
+	background-color: #ffffff;
+	margin-left: 80px;
+	padding: 8px 20px 15px 20px;
+	margin-top: 45px;
+	float: left;
+	border-color: darkgray;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/*Entire box (div) with gallery me*/
+.gallery-box {
+	height: auto;
+	width: 50%;
+	background-color: #ffffff;
+	margin-left: 80px;
+	padding: 10px 20px 15px 20px;
+	margin-top: 45px;
+	float: left;
+	border-color: darkgray;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/*(div) containing pic of me*/
+.mepic-box {
+	float: left;
+	margin-right: 15px;
+	width: 200px;
+	height: 200px;
+}
+
+.mepic {
+	width: 100%;
+	height: auto;
+}
+
+/*paragraph about me (p)*/
+.paragraph {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*text on form (p)*/
+.paragraph2 {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*Box (div) containing connect links from images*/
+.connect-box {
+	float: left;
+	padding: 15px 15px 15px 15px;
+	background-color: #ffffff;
+	margin-top: 45px;
+	width: 25%;
+	height: auto;
+	margin-left: 40px;
+	border-color: darkgray;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/*(div) to contain connect pics*/
+.connect-listbox {
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	height: auto;
+	padding: 10px 10px 10px 10px;
+}
+
+/*(img) connect image links*/
+.connect-image {
+	width: 30%;
+	height: auto;
+}
+
+/*name input form (input)*/
+.name-input {
+	width: 50%;
+	font-size: 12px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*email input form (input)*/
+.email-input {
+	width: 50%;
+	font-size: 12px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*message input form (input)*/
+.message-input {
+	width: 100%;
+	height: 300px;
+	size: 500;
+	font-size: 12px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*submit input button (input)*/
+.submit-input {
+	padding: 2px 5px 2px 5px;
+	color: #ffffff;
+	background-color: #3faaa5;
+	text-align: center;
+	width: 100px;
+	height: 20px;
+}
+
+/*(div) container for portfolio image links*/
+.gallery-link {
+	float: left;
+	position: relative;
+	height: auto;
+	width: 48%;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+/*gallery images (img)*/
+.gallery-image {
+	width: 100%;
+	height: auto;
+}
+
+/*(div) container for transparent text box on gallery images*/
+.gallery-textbox {
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:3px; /* position will be on bottom */
+	left:0px;
+	width:100%;
+	text-align: center;
+	/* styling bellow */
+	background-color:black;
+	color:white;
+	opacity:0.6; /* transparency */
+	filter:alpha(opacity=60); /* IE transparency */
+}
+
+/*(p) text on top of images in transparent box*/
+.gallery.words {
+	margin: 0px;
+	font-size: 50px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+/*copyright image at bottom of screen (div)*/
+.copyright {
+	width: 100%;
+	height: 60px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-color: #666666;
+	color: #ffffff;
+	text-align: center;
+	bottom: 0;
+	float: left;
+	padding-top: 20px;
+	border-top: 5px solid #801B22;
+	/*margin-top: 50px;
+	*/
+}
+
+@media only screen and (max-width: 980px) {
+/*Top bar with Title and Nav (div)*/
+.top-bar {
+	background-color: #ffffff;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid darkgray;
+	position: relative;
+}
+
+/*Blue box with my name (div)*/
+.blue-title {
+	margin-left: 80px;
+	margin-top: 0;
+	width: 300px;
+	height: 80px;
+	background-color: #801B22;
+	text-align: center;
+	color: #ffffff;
+	float: left;
+}
+
+/*(div) to hold nav bar*/
+.nav {
+	float: left;
+	width: 33%;
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	right: 40px;
+}
+
+/*Entire box (div) with about me*/
+.about-box {
+	height: auto;
+	width: 50%;
+	background-color: #ffffff;
+	margin-left: 80px;
+	padding: 10px 20px 15px 20px;
+	margin-top: 45px;
+	float: left;
+	border-color: darkgray;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.mepic-box {
+	float: none;
+	margin-right: 15px;
+	width: 100%;
+	height: auto;
+}
+
+/*(div) container for portfolio image links*/
+.gallery-link {
+	float: left;
+	position: relative;
+	height: auto;
+	width: 100%;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+/*Nav bar (div), each individual list item*/
+.nav-list {
+    width: 30%;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+/*(div) container of most of the page*/
+.container {
+	width: 100%;
+	height: auto;
+	margin-bottom: -80px;
+	float: left;
+	padding-bottom: 160px;
+}
+
+/*Entire box (div) with about me*/
+.about-box {
+	height: auto;
+	width: 90%;
+	margin-left: 22px;
+	padding: 15px 15px 15px 15px;
+}
+
+/*Entire box (div) with contact me*/
+.contact-box {
+	height: auto;
+	width: 90%;
+	margin-left: 22px;
+	padding: 15px 15px 15px 15px;
+}
+
+/*Entire box (div) with gallery me*/
+.gallery-box {
+	height: auto;
+	width: 90%;
+	margin-left: 22px;
+	padding: 15px 15px 15px 15px;
+}
+/*Box (div) containing connect links from images*/
+.connect-box {
+	width: 90%;
+	height: auto;
+	margin-left: 22px;
+}
+
+/*(div) to contain connect pics*/
+.connect-listbox {
+	width: 40%;
+	position: relative;
+	bottom: 0;
+	height: auto;
+	padding: 10px 10px 10px 10px;
+}
+
+.mepic-box {
+	float: left;
+	margin-right: 15px;
+	width: 200px;
+	height: 200px;
+}
+
+/*paragraph about me (p)*/
+.paragraph {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*(div) container for portfolio image links*/
+.gallery-link {
+	float: left;
+	position: relative;
+	height: auto;
+	width: 48%;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+/*Nav bar (div), each individual list item*/
+.nav-list {
+    width: 30%;
+}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+/*Top bar with Title and Nav (div)*/
+.top-bar {
+	width: 100%;
+	height: 160px;
+}
+
+/*Blue box with my name (div)*/
+.blue-title {
+	margin-top: 0px;
+	width: 100%;
+	float: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+/*(div) to hold nav bar*/
+.nav {
+	width: 100%;
+	float: none;
+	margin-right: 0px;
+	margin-left: 0px;
+	bottom: 0;
+	right: 0;
+}
+
+/*Nav bar (div), each individual list item*/
+.nav-list {
+    width: 33%;
+	padding-top: 30px;
+}
+
+/*pic of me (img)*/
+.mepic {
+	float: none;
+}
+
+/*Entire box (div) with about me*/
+.about-box {
+	height: auto;
+	width: 88%;
+	margin-left: 22px;
+	padding: 15px 15px 15px 15px;
+}
+
+/*Entire box (div) with contact me*/
+.contact-box {
+	height: auto;
+	width: 88%;
+	margin-left: 22px;
+	padding: 15px 15px 15px 15px;
+}
+
+/*Entire box (div) with gallery me*/
+.gallery-box {
+	height: auto;
+	width: 88%;
+	margin-left: 22px;
+	padding: 15px 15px 15px 15px;
+}
+
+/*Box (div) containing connect links from images*/
+.connect-box {
+	width: 88%;
+	height: auto;
+	margin-left: 22px;
+}
+
+/*(div) container for portfolio image links*/
+.gallery-link {
+	float: left;
+	position: relative;
+	height: auto;
+	width: 99%;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.mepic-box {
+	float: none;
+	margin-right: 15px;
+	width: 100%;
+	height: auto;
+}
+
+}
