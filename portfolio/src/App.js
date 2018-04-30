@@ -23,12 +23,12 @@ class App extends Component {
   }
 
   //determines which type of project to diplay
-  whichProj = (projects) => {
+  whichProj = (projects, newApp) => {
 
     var hold = [];
 
     for (let i = 0; i < this.state.projects.length; i++) {
-      if (this.state.projects[i].type == this.state.displayType) {
+      if (this.state.projects[i].type == newApp) {
         hold.push(projects[i]);
       }
     }
@@ -39,43 +39,47 @@ class App extends Component {
   changeApp = (newApp) => {
 
     this.setState({ displayType: newApp });
-    this.whichProj(this.state.projects);
+    this.whichProj(this.state.projects, newApp);
 
   }
 
   componentDidMount() {
-    this.whichProj(this.state.projects);
+    this.whichProj(this.state.projects, this.state.displayType);
   }
 
 
   render() {
     return (
       <Grid componentClass="Container">
-
-
         <Row>
-          <Col md={1} sm={0} style={{ height: '100px' }}></Col>
+          <Col md={1} xsHidden sHidden style={{ height: '100px' }}></Col>
           <Col md={10} sm={12}>
             <Row style={{ borderBottom: 'solid 1px black', marginBottom: '20px' }}>
               <Col md={4} sm={12}>
                 <Title>Madeleine Griffin</Title>
               </Col>
-              <Col md={4} sm={12}>
-                <About>an engineer turned web-developer</About>
+              <Col md={3} sm={12}>
+                <About>a full stack web developer based in Chicago</About>
               </Col>
-              <Col md={4} sm={12}>
+              <Col md={5} sm={12}>
                 <Contact>
-                  <a className="link" href="https://www.linkedin.com/in/madeleinegriffin" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-                  <a className="link" href="https://github.com/madeleinecgriffin" target="_blank" rel="noopener noreferrer">GITHUB</a>
+                  <Row>
+                    <Col md={6} sm={12}>
+                      <ListLink href={'https://www.linkedin.com/in/madeleinegriffin'}>LINKEDIN</ListLink>
+                    </Col>
+                    <Col md={6} sm={12}>
+                      <ListLink href={'https://github.com/madeleinecgriffin'}>GITHUB</ListLink>
+                    </Col>
+                  </Row>
                 </Contact>
               </Col>
             </Row>
           </Col>
-          <Col md={1} sm={0} style={{ height: '100px' }}></Col>
+          <Col md={1} xsHidden sHidden style={{ height: '100px' }}></Col>
         </Row>
 
         <Row>
-          <Col md={2} sm={0} style={{ height: '100px' }}></Col>
+          <Col md={2} xsHidden sHidden style={{ height: '100px' }}></Col>
           <Col md={8} sm={12}>
             <Row style={{ borderBottom: 'solid 1px black', marginBottom: '20px', paddingBottom: '10px' }}>
               <Col md={6} sm={12}>
@@ -93,21 +97,24 @@ class App extends Component {
                       key={project.id}
                       id={project.id}
                     >
-                      <Col md={8} sm={12}>
-                        <ListTitle>{project.title}</ListTitle>
-                        <ListTitle>{project.date}</ListTitle>
-                      </Col>
-                      <Col md={4} sm={12}>
-                        <ListLink href={project.github}>GITHUB</ListLink>
-                        <ListLink href={project.live}>LIVE</ListLink>
-                      </Col>
+                      <Row>
+                        <Col md={8} sm={12}>
+                          <ListTitle><h2>{project.title}</h2></ListTitle>
+                          <ListTitle>Tools: {project.tools}</ListTitle>
+                          <ListTitle>Completed: {project.date}</ListTitle>
+                        </Col>
+                        <Col md={4} sm={12}>
+                          <ListLink href={project.github}>GITHUB</ListLink>
+                          <ListLink href={project.live}>LIVE</ListLink>
+                        </Col>
+                      </Row>
                     </ListItem>
                   </Row>
                 ))}
               </List>
             </Row>
           </Col>
-          <Col md={2} sm={0} style={{ height: '100px' }}></Col>
+          <Col md={2} xsHidden sHidden style={{ height: '100px' }}></Col>
         </Row>
 
       </Grid>

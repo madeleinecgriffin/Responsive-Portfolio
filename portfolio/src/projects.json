@@ -5,7 +5,8 @@
         "date": "April 2018",
         "github": "https://github.com/madeleinecgriffin/react-memory-game",
         "live": "https://react-memory-maru.herokuapp.com/",
-        "type": "game"
+        "type": "game",
+        "tools": "React"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "date": "March 2018",
         "github": "https://github.com/madeleinecgriffin/news_app",
         "live": "https://limitless-plains-73736.herokuapp.com/",
-        "type": "game"
+        "type": "game",
+        "tools": "Node | Express | Handlebars | MongoDB | Mongoose"
     },
     {
         "id": 3,
@@ -21,14 +23,16 @@
         "date": "February 2018",
         "github": "https://github.com/MayraJaimes/eventful",
         "live": "https://afternoon-oasis-27882.herokuapp.com/",
-        "type": "app"
+        "type": "app",
+        "tools": "Node | Express | Handlebars | MySQL | Sequelize"
     },
     {
         "id": 4,
-        "title": "Hand Ups - a social app for recycling old posessions",
+        "title": "Hand Me Down - a social app for recycling old posessions",
         "date": "May 2018",
         "github": "https://github.com/gracepark01/Project3",
         "live": "https://floating-chamber-26731.herokuapp.com/",
-        "type": "app"
+        "type": "app",
+        "tools": "Node | Express | React | MySQL | Sequelize"
     }
 ]

@@ -1,20 +1,19 @@
-.ListLink {
+.link {
     font-size: 19px;
-    width: 100%;
-    text-decoration: none;
+    width: 40%;
     text-align: center;
     float: left;
+    margin: 10px;
     padding: 1px;
-    margin: 2px;
     color: #c03823;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif; 
     border: solid 1px #c03823;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-}
-
-.ListLink:hover {
+  }
+  
+  .link:hover {
     background-color: #c03823;
     color: white;
-}
+  }
