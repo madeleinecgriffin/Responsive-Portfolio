@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "React Memory Game with Marutaro",
+        "date": "April 2018",
+        "github": "https://github.com/madeleinecgriffin/react-memory-game",
+        "live": "https://react-memory-maru.herokuapp.com/",
+        "type": "game"
+    },
+    {
+        "id": 2,
+        "title": "Scraping News Articles with MongoDB",
+        "date": "March 2018",
+        "github": "https://github.com/madeleinecgriffin/news_app",
+        "live": "https://limitless-plains-73736.herokuapp.com/",
+        "type": "game"
+    },
+    {
+        "id": 3,
+        "title": "Eventful - an event planning app",
+        "date": "February 2018",
+        "github": "https://github.com/MayraJaimes/eventful",
+        "live": "https://afternoon-oasis-27882.herokuapp.com/",
+        "type": "app"
+    },
+    {
+        "id": 4,
+        "title": "Hand Ups - a social app for recycling old posessions",
+        "date": "May 2018",
+        "github": "https://github.com/gracepark01/Project3",
+        "live": "https://floating-chamber-26731.herokuapp.com/",
+        "type": "app"
+    }
+]

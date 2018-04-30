@@ -1,0 +1,15 @@
+.ListTitle {
+    font-size: 22px;
+    width: 100%;
+    text-align: left;
+    float: left;
+    color: black;    
+}
+
+.ListDate {
+    font-size: 19px;
+    width: 100%;
+    text-align: left;
+    float: left;
+    color: black;
+}
