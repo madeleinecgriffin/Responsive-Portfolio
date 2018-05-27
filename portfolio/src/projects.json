@@ -28,10 +28,10 @@
     },
     {
         "id": 4,
-        "title": "Hand Me Down - a social app for recycling old posessions",
+        "title": "Pay It Forward - a social app for recycling old posessions in your community",
         "date": "May 2018",
         "github": "https://github.com/gracepark01/Project3",
-        "live": "https://floating-chamber-26731.herokuapp.com/",
+        "live": "https://powerful-plains-19281.herokuapp.com/",
         "type": "app",
         "tools": "Node | Express | React | MySQL | Sequelize"
     }
