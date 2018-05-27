@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "homepage": "https://madeleinecgriffin.github.io/Responsive-Portfolio",
   "private": true,
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.11.1"
+  },
   "dependencies": {
     "gh-pages": "^1.1.0",
     "lodash": "^4.17.10",
